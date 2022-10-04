@@ -21,6 +21,6 @@ declare module '*.jpeg'
 declare module '*.gif'
 declare module '*.bmp'
 declare module '*.tiff'
-2. 在项目中使用redux-toolkit
+2. 在项目中使用redux-toolkit(后面再改)
 ```
 

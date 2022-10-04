@@ -1,17 +1,23 @@
 import React from 'react';
-import Button from '@src/common/components/Button';
 
-import './index.less';
+import ResumeAction from './ResumeAction';
+import ResumeContent from './ResumeContent';
+import ResumeToolBars from './ResumeToolBars';
+
+import './index.css';
 
 function Resume() {
-  const handleClick = () => {
-    console.log(123);
-
-  }
   return (
-    <div>
-      <h2>简历模块</h2>
-      <Button children="点击" border={ true} onClick={handleClick}/>
+    <div className="container">
+      <div className="header">
+        <ResumeAction />
+      </div>
+      <div className="content">
+        <ResumeContent />
+      </div>
+      <div className="toolbar">
+        <ResumeToolBars />
+      </div>
     </div>
   );
 }
